@@ -1,0 +1,47 @@
+body{
+    background-color: #e5e5e5;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+header{
+    background-color: black;
+    border-radius: 5px;
+}
+button{
+    color: white;
+    background-color: black;
+    
+}
+.cabecalho{
+  display: flex;
+  gap: 15%;
+  align-items: center;
+
+}
+.items{
+    display: flex;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.nome{
+    font-size: 150%;
+    margin: 5%;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: flex-start; /* mantém à esquerda */
+}
+footer {
+    position: fixed; /* Fixa na tela */
+    bottom: 0;       /* Encosta no fundo */
+    right: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 10%;           /* Define altura fixa */
+    padding: 20px;           /* Espaçamento interno */
+}
