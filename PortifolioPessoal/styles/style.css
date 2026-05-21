@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,10 @@
 }
 
 body {
-    background-color: #e5e5e5;
+    background-color: #7A1F3D;
     font-family: Arial, sans-serif;
     padding-top: 80px; /* Evita que o header cubra o conteúdo */
+    transition: 1s;
 }
 
 header {
@@ -47,6 +50,7 @@ header {
 }
 
 .nome h1{
+    font-family: "Jersey 25";
     font-size: 4rem;
     line-height: 1.1;
     text-transform: uppercase;
@@ -69,10 +73,122 @@ button {
     background: transparent;
     color: white;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background: white;
     color: black;
+}
+.mainsm{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 4%;
+    position: relative;
+}
+.mainsm img{
+    float: right;
+    margin-left: 18%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+.apresentacao{
+    font-size: 130%;
+    font-family: ABeeZee    ;
+}
+.nomesm{
+    font-size: 350%;
+    font-family: "Jersey 25";
+}
+.apresentacaohome{
+    font-family: ABeeZee;
+    font-size: 120%;
+}
+.texto-sm{
+    text-align: center;
+}
+
+.carousel-section {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.carousel-section h1 {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.carousel-slides {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-height: 220px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    transition: opacity 0.35s ease;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.item-label {
+    margin-top: 12px;
+    font-weight: 700;
+    opacity: 0.85;
+}
+
+
+@media (max-width: 640px) {
+    .carousel-wrapper {
+        flex-direction: column;
+    }
+
+    .carousel-control {
+        width: 42px;
+        height: 42px;
+    }
 }
