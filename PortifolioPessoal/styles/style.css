@@ -96,6 +96,8 @@ button:hover {
     max-width: 300px;
     height: auto;
     border-radius: 8px;
+    border: 10px solid white ;
+    transition: border-color 1s ease;
 }
 .apresentacao{
     font-size: 130%;
@@ -113,82 +115,67 @@ button:hover {
     text-align: center;
 }
 
-.carousel-section {
-    max-width: 900px;
-    margin: 0 auto 80px;
-    padding: 40px 20px;
-    color: white;
-    text-align: center;
-}
-
-.carousel-section h1 {
-    font-size: 2.4rem;
-    margin-bottom: 24px;
-    letter-spacing: 0.05em;
-}
-
-.carousel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.carousel-slides {
-    position: relative;
-    width: 100%;
-    max-width: 640px;
-    min-height: 220px;
-    overflow: hidden;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
-}
-
-.carousel-item {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    pointer-events: none;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-    transition: opacity 0.35s ease;
-}
-
-.carousel-item.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.carousel-item h2 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-}
-
-.carousel-item p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
 .item-label {
     margin-top: 12px;
     font-weight: 700;
     opacity: 0.85;
 }
-
-
-@media (max-width: 640px) {
-    .carousel-wrapper {
-        flex-direction: column;
-    }
-
-    .carousel-control {
-        width: 42px;
-        height: 42px;
-    }
+.projetosh1{
+    font-family: "Jersey 25";
+    font-size: 3rem;
+    text-align: center;
+}
+.h2-projetos{
+    font-family: "Jersey 25";
+    font-size: 230%;
+}
+.projeto-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.projeto-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.projetos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    font-family: ABeeZee;
+    font-size: 120%;
+}
+hr{
+color: white;
+margin-top: 1%;
+}
+.escola{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.cursos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.body-menu{
+    color: #7A1F3D;
+}
+.h1-formacao{
+    font-family: "Jersey 25";
+    font-size: 3rem;
+    text-align: center;
+}
+h2{
+    font-family: ABeeZee;
 }
