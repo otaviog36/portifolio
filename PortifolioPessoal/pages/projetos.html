@@ -6,41 +6,48 @@
     <title>Otávio Gongra</title>
     <link rel="stylesheet" href="/PortifolioPessoal/styles/style.css">
 </head>
-<body>
-        <header>
-            <div class="cabecalho">
-                <a href="index.html"    class="items">Home</a>
-                <a href="sm.html" class="items">Sobre mim</a>
-                <a href="projetos.html"   class="items">Projetos</a>
-                <a href="formacao.html"    class="items">Formação</a>
-                <a href=""              class="items">Contato</a>
-            </div>
-        </header>
-    <main>
-        <h1 class="projetosh1">Projetos em desenvolvimento:</h1>
-        <hr>     
-        <div class="projetos">
-            <div class="projeto-1">
-                <h2 class="h2-projetos">Portifólio Pessoal:</h2>
-                <p>Desenvolvimento de um portifólio pessoal <br>
-                utilizando HTML, CSS e JavaScript, com o objetivo de <br>
-                apresentar minhas habilidades, <br>
-                experiências e projetos de forma <br>
-                organizada e visualmente atraente.</p>
-            </div>
-            <div class="projeto-2">
-                <h2 class="h2-projetos"s>Finance Helper:</h2>
-                <p>Desenvolvimento de um app/site com o intuito <br>
-                de auxiliar na gestão financeira pessoal, oferecendo <br>
-                ferramentas para controle de gastos, <br>
-                planejamento de orçamento e análise de <br>
-                desempenho financeiro.</p>
-            </div>
-        </div>    
+<body class="body-menu">
+    <header>
+        <nav class="cabecalho">
+            <a href="/PortifolioPessoal/pages/index.html" class="items">Home</a>
+            <a href="/PortifolioPessoal/pages/sm.html" class="items">Sobre mim</a>
+            <a href="/PortifolioPessoal/pages/projetos.html" class="items">Projetos</a>
+            <a href="/PortifolioPessoal/pages/formacao.html" class="items">Formação</a>
+            <a href="/PortifolioPessoal/pages/contato.html" class="items">Contato</a>
+        </nav>
+    </header>
+
+    <main class="projetos-page">
+        <section class="projetos-intro">
+            <p class="projetos-eyebrow">Projetos em desenvolvimento</p>
+            <h1 class="projetosh1">Projetos</h1>
+            <p class="projetos-texto">
+                Alguns trabalhos que estou desenvolvendo para consolidar minhas habilidades em front-end, organização visual e experiência do usuário.
+            </p>
+        </section>
+
+        <section class="projetos-grid">
+            <article class="projeto-card">
+                <p class="projeto-chip">Portfólio</p>
+                <h2 class="h2-projetos">Portifólio Pessoal</h2>
+                <p>
+                    Desenvolvimento de um portfólio pessoal utilizando HTML, CSS e JavaScript, com o objetivo de apresentar minhas habilidades, experiências e projetos de forma organizada e visualmente atraente.
+                </p>
+            </article>
+
+            <article class="projeto-card">
+                <p class="projeto-chip">Financeiro</p>
+                <h2 class="h2-projetos">Finance Helper</h2>
+                <p>
+                    Desenvolvimento de um app/site com o intuito de auxiliar na gestão financeira pessoal, oferecendo ferramentas para controle de gastos, planejamento de orçamento e análise de desempenho financeiro.
+                </p>
+            </article>
+        </section>
     </main>
-        <footer class="rodape">
-            <button id="modoClaroEscuro">Alive mode</button>    
-        </footer>
+
+    <footer class="rodape">
+        <button id="modoClaroEscuro">Alive mode</button>
+    </footer>
     <script src="/PortifolioPessoal/scripts/script.js"></script>
 </body>
 </html>

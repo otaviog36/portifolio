@@ -120,32 +120,77 @@ button:hover {
     font-weight: 700;
     opacity: 0.85;
 }
+.projetos-page{
+    min-height: calc(100vh - 160px);
+    padding: 2rem 1rem 6rem;
+}
+
+.projetos-intro{
+    max-width: 860px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.projetos-eyebrow{
+    font-family: ABeeZee;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.82);
+    margin-bottom: 0.75rem;
+}
+
 .projetosh1{
     font-family: "Jersey 25";
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
+
+.projetos-texto{
+    font-family: ABeeZee;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.projetos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.projeto-card{
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
 .h2-projetos{
     font-family: "Jersey 25";
-    font-size: 230%;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
 }
-.projeto-1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.projeto-2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.projetos{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
+
+.projeto-card p{
     font-family: ABeeZee;
-    font-size: 120%;
+    line-height: 1.8;
 }
+
+.projeto-chip{
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    font-family: ABeeZee;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
 hr{
 color: white;
 margin-top: 1%;
@@ -160,22 +205,175 @@ margin-top: 1%;
     flex-direction: column;
     text-align: center;
 }
-.formacao{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5%;
-    margin-right: 5%;
-    margin-left: 5%;
+.formacao-page{
+    min-height: calc(100vh - 160px);
+    padding: 2rem 1rem 6rem;
 }
+
+.formacao-intro{
+    max-width: 860px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.formacao-eyebrow{
+    font-family: ABeeZee;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.82);
+    margin-bottom: 0.75rem;
+}
+
 .body-menu{
     color: #7A1F3D;
 }
+
 .h1-formacao{
     font-family: "Jersey 25";
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
+
+.formacao-texto{
+    font-family: ABeeZee;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.formacao-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.formacao-card{
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+.formacao-card h2{
+    font-family: ABeeZee;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.formacao-chip{
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    font-family: ABeeZee;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.formacao-periodo,
+.formacao-status{
+    font-family: ABeeZee;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+}
+
+.destaque-formacao{
+    background: rgba(255, 255, 255, 0.08);
+}
+
 h2{
     font-family: ABeeZee;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+
+.contato-page{
+    min-height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 6rem;
+}
+
+.contato-card{
+    width: min(720px, 100%);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contato-eyebrow{
+    font-family: ABeeZee;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.82);
+    margin-bottom: 0.75rem;
+}
+
+.h1-contato{
+    font-family: "Jersey 25";
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contato-intro{
+    font-family: ABeeZee;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.75rem;
+}
+
+.link-contato{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.contato-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.contato-link:hover{
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.contato-link-icon{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+    .contato-card{
+        padding: 1.5rem;
+    }
+
+    .h1-contato{
+        font-size: 2.4rem;
+    }
+
+    .contato-intro{
+        font-size: 1rem;
+    }
 }

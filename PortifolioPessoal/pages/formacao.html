@@ -6,40 +6,57 @@
     <title>Otávio Gongra</title>
     <link rel="stylesheet" href="/PortifolioPessoal/styles/style.css">
 </head>
-<body>
-        <header>
-            <div class="cabecalho">
-                <a href="index.html"    class="items">Home</a>
-                <a href="sm.html"       class="items">Sobre mim</a>
-                <a href="projetos.html" class="items">Projetos</a>
-                <a href="formacao.html" class="items">Formação</a>
-                <a href=""              class="items">Contato</a>
-            </div>
-        </header>
-    <main>
-        <div class="formacao">
-            <div class="escola">
-                <h1 class="h1-formacao">Ensino fundamental:</h1>
-                <h2>Sesi, Garça-sp<br>
-                2014-2022</h2>
-                <hr>
-                <h1 class="h1-formacao">Ensino médio:</h1>
-                <h2>Fatec/Etec, Garça-sp<br>
-                2023-06/2023</h2>
-                <h2>Dona Antônia Valadares, Divinópolis-mg<br>
-                08/2023-2025</h2>
-            </div>
-            <div class="cursos">
-                <h1 class="h1-formacao">Cursos:</h1>
-                <h2>Proz, Divinópolis-mg</h2>
-                <h2>Ano de inicio: 2025</h2>
-                <h2 id="tempoRestanteParaFormatura"></h2>
-            </div>
-        </div>
+<body class="body-menu">
+    <header>
+        <nav class="cabecalho">
+            <a href="/PortifolioPessoal/pages/index.html" class="items">Home</a>
+            <a href="/PortifolioPessoal/pages/sm.html" class="items">Sobre mim</a>
+            <a href="/PortifolioPessoal/pages/projetos.html" class="items">Projetos</a>
+            <a href="/PortifolioPessoal/pages/formacao.html" class="items">Formação</a>
+            <a href="/PortifolioPessoal/pages/contato.html" class="items">Contato</a>
+        </nav>
+    </header>
+
+    <main class="formacao-page">
+        <section class="formacao-intro">
+            <p class="formacao-eyebrow">Trajetória acadêmica</p>
+            <h1 class="h1-formacao">Formação</h1>
+            <p class="formacao-texto">
+                Um resumo da minha trajetória escolar e acadêmica, com foco nos períodos e na formação em curso.
+            </p>
+        </section>
+
+        <section class="formacao-grid">
+            <article class="formacao-card">
+                <p class="formacao-chip">Ensino Fundamental</p>
+                <h2>Sesi — Garça/SP</h2>
+                <p class="formacao-periodo">2014 - 2022</p>
+            </article>
+
+            <article class="formacao-card">
+                <p class="formacao-chip">Ensino Médio</p>
+                <h2>Fatec/Etec — Garça/SP</h2>
+                <p class="formacao-periodo">2023 - 06/2023</p>
+            </article>
+
+            <article class="formacao-card">
+                <p class="formacao-chip">Ensino Médio</p>
+                <h2>Dona Antônia Valadares — Divinópolis/MG</h2>
+                <p class="formacao-periodo">08/2023 - 2025</p>
+            </article>
+
+            <article class="formacao-card destaque-formacao">
+                <p class="formacao-chip">Cursos</p>
+                <h2>Proz — Divinópolis/MG</h2>
+                <p class="formacao-periodo">Início em 2025</p>
+                <p id="tempoRestanteParaFormatura" class="formacao-status"></p>
+            </article>
+        </section>
     </main>
-        <footer class="rodape">
-            <button id="modoClaroEscuro">Alive mode</button>    
-        </footer>
+
+    <footer class="rodape">
+        <button id="modoClaroEscuro">Alive mode</button>
+    </footer>
     <script src="/PortifolioPessoal/scripts/script.js"></script>
 </body>
 </html>

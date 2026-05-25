@@ -1,37 +1,55 @@
 const botao = document.getElementById("modoClaroEscuro");
 const foto = document.getElementById("minhaFoto");
-let claro = true;
+const COOKIE_NAME = "portfolio_theme";
+const THEME_ALIVE = "alive";
+const THEME_DEAD = "dead";
+
+function getCookieValue(name) {
+    const cookies = document.cookie.split(";");
+
+    for (const cookie of cookies) {
+        const [chave, valor] = cookie.trim().split("=");
+
+        if (chave === name) {
+            return valor;
+        }
+    }
+
+    return null;
+}
+
+function setThemeCookie(theme) {
+    document.cookie = `${COOKIE_NAME}=${theme}; path=/; max-age=31536000`;
+}
+
+function applyTheme(theme) {
+    const isAlive = theme === THEME_ALIVE;
+
+    document.body.style.backgroundColor = isAlive ? "#7A1F3D" : "#616161";
+    document.body.style.color = isAlive ? "#fff2E1" : "black";
+
+    if (botao) {
+        botao.textContent = isAlive ? "Alive mode" : "Dead mode";
+        botao.style.backgroundColor = isAlive ? "black" : "white";
+        botao.style.color = isAlive ? "white" : "black";
+    }
+
+    if (foto) {
+        foto.style.borderColor = isAlive ? "white" : "black";
+    }
+}
+
+let currentTheme = getCookieValue(COOKIE_NAME) || THEME_ALIVE;
 
 if (botao) {
     botao.addEventListener("click", function() {
-        if (claro) {
-            document.body.style.backgroundColor = "#616161";
-            document.body.style.color = "black";
-            botao.textContent = "Dead mode";
-            botao.style.backgroundColor = "white";
-            botao.style.color = "black";
-            if (foto) {
-                foto.style.borderColor = "black";
-            }
-        } else {
-            document.body.style.backgroundColor = "#7A1F3D";
-            document.body.style.color = "#fff2E1";
-            botao.textContent = "Alive mode";
-            botao.style.backgroundColor = "black";
-            botao.style.color = "white";
-            if (foto) {
-                foto.style.borderColor = "white";
-            }
-        }
-        claro = !claro;
+        currentTheme = currentTheme === THEME_ALIVE ? THEME_DEAD : THEME_ALIVE;
+        setThemeCookie(currentTheme);
+        applyTheme(currentTheme);
     });
 }
 
-document.body.style.color = "#ffffff";
-if (foto) {
-    foto.style.borderColor = "white";
-}
-
+applyTheme(currentTheme);
 
 // utilização do date
 let dataAtual = new Date();
